@@ -20,7 +20,7 @@
 	<groupId>com.onstar</groupId>
 	<artifactId>testproj</artifactId>
 	<packaging>war</packaging>
-	<version>1.5-SNAPSHOT</version>
+	<version>1.4-SNAPSHOT</version>
 		<!-- TODO project name  -->
 	<name>quickstart</name>
 	<description />
