@@ -20,7 +20,7 @@
 	<groupId>com.onstar</groupId>
 	<artifactId>testproj</artifactId>
 	<packaging>war</packaging>
-	<version>1.1_RC_12</version>
+	<version>1.2-SNAPSHOT</version>
 	<name>quickstart</name>
 	<description />
 	<!--
