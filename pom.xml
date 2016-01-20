@@ -213,13 +213,13 @@
 	</repositories>
 	<distributionManagement>
 		<repository>
-			<id>releases</id>
-			<name>Releases</name>
+			<id>central</id>
+			<name>libs-release</name>
 			<url>http://localhost:8081/artifactory/libs-release-local</url>
 		</repository>
 		<snapshotRepository>
 			<id>snapshots</id>
-			<name>Snapshots</name>
+			<name>libs-snapshots</name>
 			<url>http://localhost:8081/artifactory/libs-snapshot-local</url>
 		</snapshotRepository>
 	</distributionManagement>
