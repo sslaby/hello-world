@@ -6,9 +6,7 @@
    The ASF licenses this file to You under the Apache License, Version 2.0
    (the "License"); you may not use this file except in compliance with
    the License.  You may obtain a copy of the License at
-
         http://www.apache.org/licenses/LICENSE-2.0
-
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -20,7 +18,7 @@
 	<groupId>com.onstar</groupId>
 	<artifactId>testproj</artifactId>
 	<packaging>war</packaging>
-	<version>1.2-RELEASE</version>
+	<version>1.0-SNAPSHOT</version>
 	<name>quickstart</name>
 	<description />
 	<!--
@@ -45,6 +43,11 @@
 		<!-- allowed values: R7, 1.0, 1.5, 2.0 or none -->
 		<wtp.version>none</wtp.version>
 	</properties>
+	<parent>
+		<groupId>ciparentpom</groupId>
+		<artifactId>ciparentpom</artifactId>
+		<version>0.0.1</version>		
+	</parent>
 	<dependencies>
 		<!--  WICKET DEPENDENCIES -->
 		<dependency>
@@ -176,25 +179,7 @@
 					<wtpversion>${wtp.version}</wtpversion>
 				</configuration>
 			</plugin>
-			<plugin>
-				<groupId>external.atlassian.jgitflow</groupId>
-				<artifactId>jgitflow-maven-plugin</artifactId>
-				<version>1.0-m5.1</version>
-				<configuration>
-					<pushFeatures>true</pushFeatures>
-					<pushHotfixes>true</pushHotfixes>
-					<pushReleases>true</pushReleases>
-					<enableSshAgent>true</enableSshAgent>
-					<flowInitContext>
-						<masterBranchName>master</masterBranchName>
-						<developBranchName>dev</developBranchName>
-						<featureBranchPrefix>feature-</featureBranchPrefix>
-						<releaseBranchPrefix>release-</releaseBranchPrefix>
-						<hotfixBranchPrefix>hotfix-</hotfixBranchPrefix>
-						<versionTagPrefix>${project.artifactId}-</versionTagPrefix>
-					</flowInitContext>
-				</configuration>
-			</plugin>	
+		
 		</plugins>
 	</build>
 
@@ -210,16 +195,5 @@
 			</snapshots>
 		</repository>
 	</repositories>
-	<distributionManagement>
-		<repository>
-			<id>central</id>
-			<name>libs-release</name>
-			<url>http://localhost:8081/artifactory/libs-release-local</url>
-		</repository>
-		<snapshotRepository>
-			<id>snapshots</id>
-			<name>libs-snapshots</name>
-			<url>http://localhost:8081/artifactory/libs-snapshot-local</url>
-		</snapshotRepository>
-	</distributionManagement>
+
 	</project>
