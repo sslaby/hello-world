@@ -45,11 +45,6 @@
 		<!-- allowed values: R7, 1.0, 1.5, 2.0 or none -->
 		<wtp.version>none</wtp.version>
 	</properties>
-	<parent>
-		<groupId>ciparentpom</groupId>
-		<artifactId>ciparentpom</artifactId>
-		<version>0.0.1-SNAPSHOT</version>		
-	</parent>
 	<dependencies>
 		<!--  WICKET DEPENDENCIES -->
 		<dependency>
