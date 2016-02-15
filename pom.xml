@@ -18,7 +18,7 @@
 	<groupId>com.onstar</groupId>
 	<artifactId>testproj</artifactId>
 	<packaging>war</packaging>
-	<version>1.0-RELEASE-SNAPSHOT</version>
+	<version>1.0-RELEASE</version>
 	<name>quickstart</name>
 	<description />
 	<!--
