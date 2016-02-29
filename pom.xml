@@ -44,7 +44,7 @@
 		<wtp.version>none</wtp.version>
 	</properties>
 	<parent>
-		<groupId>ciparentpom</groupId>
+		<groupId>com.onstar.adc.parent</groupId>
 		<artifactId>ciparentpom</artifactId>
 		<version>0.0.1</version>		
 	</parent>
