@@ -43,11 +43,7 @@
 		<!-- allowed values: R7, 1.0, 1.5, 2.0 or none -->
 		<wtp.version>none</wtp.version>
 	</properties>
-	<parent>
-		<groupId>com.onstar.adc.parent</groupId>
-		<artifactId>ciparentpom</artifactId>
-		<version>0.0.1</version>		
-	</parent>
+	
 	<dependencies>
 		<!--  WICKET DEPENDENCIES -->
 		<dependency>
