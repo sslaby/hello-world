@@ -179,10 +179,40 @@
 					<wtpversion>${wtp.version}</wtpversion>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>external.atlassian.jgitflow</groupId>
+				<artifactId>jgitflow-maven-plugin</artifactId>
+				<version>${jgitflow.version}</version>
+				<configuration>
+					<pushFeatures>true</pushFeatures>
+					<pushHotfixes>true</pushHotfixes>
+					<pushReleases>true</pushReleases>
+					<enableSshAgent>true</enableSshAgent>
+					<flowInitContext>
+						<masterBranchName>master</masterBranchName>
+						<developBranchName>dev</developBranchName>
+						<featureBranchPrefix>feature-</featureBranchPrefix>
+						<releaseBranchPrefix>release-</releaseBranchPrefix>
+						<hotfixBranchPrefix>hotfix-</hotfixBranchPrefix>
+						<versionTagPrefix>${project.artifactId}-</versionTagPrefix>
+					</flowInitContext>
+				</configuration>
+			</plugin>
 		
 		</plugins>
 	</build>
-
+	<distributionManagement>
+		<repository>
+			<id>central</id>
+			<name>libs-release-local</name>
+			<url>http:/localhost:8081/artifactory/libs-release-local</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>libs-snapshots-local</name>
+			<url>http://localhost:8081/artifactory/libs-snapshot-local</url>
+		</snapshotRepository>
+	</distributionManagement>
 	<repositories>
 		<repository>
 			<id>Apache Nexus</id>
